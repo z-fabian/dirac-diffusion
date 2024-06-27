@@ -1,0 +1,10 @@
+operator:
+    type: inpainting
+    mask_type: gaussian
+    mask_min_std: 0.1
+    mask_max_std: 50
+    mask_pow: 4
+    scheduling: linear
+noise:
+    sigma_min: 0.01
+    sigma_max: 0.05

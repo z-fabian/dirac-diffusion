@@ -1,0 +1,11 @@
+dc_corr:
+  noiseless_meas_available: false
+  scale_relative: false
+  step: 0.5
+  use: true
+degr_update_method:
+  type: look_ahead
+dt: 0.02
+model_ckpt: checkpoints/deblur_celeba256_dt_0.0.ckpt
+stop_t: 1.0
+x0_pred_in_last_step: true

@@ -1,0 +1,8 @@
+operator:
+    type: gaussian_blur
+    kernel_size: 61
+    scheduling: from_file
+    schedule_path: configs/schedules/blur_schedule.txt
+noise:
+    sigma_min: 0.01
+    sigma_max: 0.05

@@ -1,0 +1,11 @@
+dc_corr:
+  noiseless_meas_available: false
+  scale_relative: true
+  step: 1.0
+  use: true
+degr_update_method:
+  type: look_ahead
+dt: 0.005
+model_ckpt: checkpoints/inpaint_celeba256_dt_0.0.ckpt
+stop_t: 0.0
+x0_pred_in_last_step: false

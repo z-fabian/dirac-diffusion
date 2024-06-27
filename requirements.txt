@@ -1,0 +1,15 @@
+lightning>=2.0.8
+matplotlib
+numpy
+scipy
+torch
+torchvision
+torchmetrics
+torch_fidelity
+tqdm
+PyYAML
+wandb
+Pillow
+lpips
+jsonargparse
+jsonargparse[signatures]>=4.27.7

@@ -1,0 +1,3 @@
+celeba256: '/data/celeba256'
+ffhq: '/data/ffhq'
+imagenet: '/data/imagenet'
