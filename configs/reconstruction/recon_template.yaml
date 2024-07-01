@@ -1,0 +1,19 @@
+# This is a reference config that explains the different fields in the config file
+dt: 0.02 # Discretization time step in the reverse process. 1/dt is the number of steps in the reverse process (NFEs).
+model_ckpt: checkpoints/deblur_celeba256_dt_1.0.ckpt # Path to the Dirac model checkpoint
+stop_t: 0.25 # Early stopping time. Note: the reverse process is indexed from t=1 to t=0, where t=1 corresponds to 1-shot reconstruction and t=0 corresponds to no early-stopping. 
+x0_pred_in_last_step: true # Choose if final prediction is the final iterate (set to false) or the final diffusion model output (posterior mean estimate) (set to true). 
+degr_update_method: # Method to use to approximate the incremental reconstruction term. See details in Appendix I. Default described in the main paper is 'look_ahead'
+  type: look_ahead
+  # type: small_look_ahead
+  #   del_t: 0.005 # Time step to approximate the gradient of the degradation locally. 0 <= del_t <= dt
+  # type: look_back_exact # Computes exact Jacobian, very compute-heavy.
+  # type: look_back
+  # type: small_look_back
+  #   del_t: 0.005 # Time step to approximate the gradient of the degradation locally. 0 <= del_t <= dt
+  # type: identity # No incremental reconstruction is used
+dc_corr: # Configuration of data-consistency correction based on DPS. See Appendix B.
+  noiseless_meas_available: false # Leverage A(x_0) directly if available.
+  scale_relative: false # Scale the correction term by noise std (false) or by error as in DPS (true).
+  step: 0.5 # Guidance weight
+  use: true # Turn guidance on or off 

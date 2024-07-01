@@ -52,14 +52,14 @@ To train an incremental reconstruction model from scratch, run
 ```bash
 python scripts/train_dirac.py fit --config PATH_TO_CONFIG
 ```
-and replace `PATH_TO_CONFIG` with the trainer config file. See trainer configs [here](configs/trainer) for deblurring and inpainting experiments. In case your GPU doesn't support mixed-precision training, change `precision` to `fp32` in the config file.
+and replace `PATH_TO_CONFIG` with the trainer config file. See trainer configs [here](configs/trainer) for deblurring and inpainting experiments. In case your GPU doesn't support mixed-precision training, change `precision` to `fp32` in the config file. You can train models with different architectural hyperparameters by adding a new key to the [model config](configs/models/models.yaml), and specifying the same key in the trainer config under `model_arch`.
 
 ## Reconstruction
 To reconstruct images, run
 ```bash
 python scripts/recon_dirac.py --config_path PATH_TO_CONFIG --dataset DATASET_NAME
 ```
-and replace `PATH_TO_CONFIG` with the reconstruction config file and `DATASET_NAME` with the name of the dataset to be reconstructed (either 'celeba256', 'ffhq' or 'imagenet'). You can find config files for both perception-optimized and distortion-optimized reconstructions [here](configs/reconstruction).
+and replace `PATH_TO_CONFIG` with the reconstruction config file and `DATASET_NAME` with the name of the dataset to be reconstructed (either 'celeba256', 'ffhq' or 'imagenet'). You can find config files for both perception-optimized and distortion-optimized reconstructions [here](configs/reconstruction). Take a look at the annotated [reference config](configs/reconstruction/recon_template.yaml) to see all the options. 
 
 ## Citation
 
