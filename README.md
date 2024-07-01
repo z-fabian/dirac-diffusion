@@ -8,7 +8,7 @@ This is the official repository for the paper *DiracDiffusion: Denoising and Inc
 
 ![](assets/overview.png)
 We introduce a novel framework for solving inverse problems using a generalized notion of diffusion that mimics the corruption process of a particular image degradation. Our method maintains data consistency throughout the reverse
-diffusion process allowing us to early-stop during reconstruction and felxibly trade off perceptual quality for lower distortion.
+diffusion process allowing us to early-stop during reconstruction and flexibly trade off perceptual quality for lower distortion.
 
 | ![Image 1](assets/deblur_celeba256.gif) | ![Image 2](assets/deblur_imagenet.gif) | ![Image 3](assets/inpaint_celeba256.gif) | ![Image 4](assets/inpaint_imagenet.gif) |
 |:-----------------------------------:|:-----------------------------------:|:-----------------------------------:|:-----------------------------------:|
