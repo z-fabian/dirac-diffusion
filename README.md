@@ -41,11 +41,11 @@ We evaluate *Dirac* on CelebA-HQ (256x256), FFHQ (256x256) and ImageNet. Our cod
 ## Pre-trained models
 | Train dataset      | Operator   | Training loss  | Checkpoint size | Link |
 | ------------ | ---------- | -------------- | --------------- | ---- |
-| CelebA-HQ | Gaussian blur | $\mathcal{L}_{IR}(\Delta t=0.0; \theta)$     | 776M           | [Download](https://drive.google.com/file/d/1dWAr4tsfmOcKOH3MfRH0oRx9nrxbr5ld/view?usp=sharing) |
-| CelebA-HQ | Gaussian blur | $\mathcal{L}_{IR}(\Delta t=1.0; \theta)$       | 776M            | [Download](https://drive.google.com/file/d/14byEkxJrJF-R96ujvzCElKxLruw-zRTk/view?usp=sharing) |
-| CelebA-HQ | Inpainting   | $\mathcal{L}_{IR}(\Delta t=0.0; \theta)$         | 776M            | [Download](https://drive.google.com/file/d/1ZDrI8_2H7KCTvBCpteNnLHuSUq9ZEfH-/view?usp=sharing) |
-| ImageNet | Gaussian blur   | $\mathcal{L}_{IR}(\Delta t=1.0; \theta)$         | 776M           | [Download](https://drive.google.com/file/d/1kxyHdV_cddg8TeuwOjS89KOW_SWVEgAZ/view?usp=sharing) |
-| ImageNet| Inpainting | $\mathcal{L}_{IR}(\Delta t=0.0; \theta)$     | 5.8G            | [Download](https://drive.google.com/file/d/1vxfq7K9By_gVx9grcO3AFVb5D0IdGhCY/view?usp=sharing) |
+| CelebA-HQ | Gaussian blur | $\mathcal{L}_{IR}(\Delta t=0.0; \theta)$     | 776M           | [Download](https://drive.google.com/file/d/1OmBk61YgpRkJaoAT5qMvc0sPpKztIUZp/view?usp=sharing) |
+| CelebA-HQ | Gaussian blur | $\mathcal{L}_{IR}(\Delta t=1.0; \theta)$       | 776M            | [Download](https://drive.google.com/file/d/1Q0Apb6uv2fGV2TV3eB6NbrHL9yi_aX1M/view?usp=sharing) |
+| CelebA-HQ | Inpainting   | $\mathcal{L}_{IR}(\Delta t=0.0; \theta)$         | 776M            | [Download](https://drive.google.com/file/d/1PcMn2uL6_3Q7nitzqBKQ9EXts4aJcCgo/view?usp=sharing) |
+| ImageNet | Gaussian blur   | $\mathcal{L}_{IR}(\Delta t=1.0; \theta)$         | 776M           | [Download](https://drive.google.com/file/d/1RchoQ8u-rlDAsAsot90yO55bgXpjfRaG/view?usp=sharing) |
+| ImageNet| Inpainting | $\mathcal{L}_{IR}(\Delta t=0.0; \theta)$     | 5.8G            | [Download](https://drive.google.com/file/d/1J8qHZHWXuy8froIHbNGdg03LilnUG7s0/view?usp=sharing) |
 
 ## Model training
 To train an incremental reconstruction model from scratch, run
